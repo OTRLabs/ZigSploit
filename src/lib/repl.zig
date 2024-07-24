@@ -8,6 +8,20 @@ const std = @import("std");
 const print = @import("std").debug.print;
 
 
+// defining the struct for REPL commands
+pub const REPLCommand = struct {
+    // the REPLCommand struct is used to define a command that the user can execute in the REPL.
+    // it contains the following fields:
+    // - name: a string that is the name of the command
+    // - description: a string that describes what the command does
+    // - function: a function that is executed when the command is called
+    name: []const u8,
+    description: []const u8,
+    // function: fn(repl: *REPL, args: []const []const u8) void,
+    
+}
+
+
 // defining the REPL struct
 pub const REPL = struct {
     // the REPL struct is the main struct that is used to create a new REPL instance.
