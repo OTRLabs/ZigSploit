@@ -8,7 +8,7 @@ const std = @import("std");
 const print = @import("std").debug.print;
 
 // defining the struct for REPL commands
-pub const Command = struct {
+pub const REPLCommand = struct {
     name: []const u8,
     handler: fn ([]const u8) void,
 };
@@ -16,7 +16,7 @@ pub const Command = struct {
 pub const REPL = struct {
     prompt: []const u8,
     allocator: *std.mem.Allocator,
-    commands: []const Command,
+    commands: []const REPLCommand,
 
     pub fn run(self: *REPL) void {
         const stdin = std.io.getStdIn();
