@@ -19,7 +19,7 @@ pub const REPLCommand = struct {
     description: []const u8,
     // function: fn(repl: *REPL, args: []const []const u8) void,
     
-}
+};
 
 
 // defining the REPL struct
