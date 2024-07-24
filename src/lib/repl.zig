@@ -48,7 +48,7 @@ pub const REPL = struct {
     // - clear_exit: a function that is used to clear the exit flag
     // - clear: a function that is used to clear the output, error messages, and user's input
     // - exit_repl: a function that is used to exit the REP
-}
+};
 
 
 pub fn repl_factory() !void {
@@ -59,4 +59,4 @@ pub fn repl_factory() !void {
     //
     //var application_repl =
 
-}
+};
